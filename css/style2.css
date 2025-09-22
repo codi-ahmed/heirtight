@@ -1,0 +1,31 @@
+#image-about-container1{
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
+#image-about-container2{
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+#image-about-container3{
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+.about-title{
+    margin-top: 100px;
+}
+
+@media only screen and (max-width:1300px) {
+#image-about-container1{
+    position: static;
+}
+#image-about-container2{
+    position: static;
+}
+#image-about-container3{
+    position: static;
+}
+    
+}

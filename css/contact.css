@@ -1,0 +1,298 @@
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+
+
+        .contact-heading {
+            text-align: left;
+            color: #ffffff;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .contact-heading h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-heading p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #bbbbbb;
+        }
+
+
+        .contact-hero {
+            top:150px;
+            margin-top: 5rem;
+            text-align: center;
+            background-color: #000;
+        }
+
+        .contact-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #ccc;
+        }
+
+        .contact-hero p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+
+
+        #draggable-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-container {
+            width: 90%;
+            display: flex;
+            margin: 1rem auto;
+            padding: 1px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+
+            background-color: #24263a;
+        }
+
+        .contact-inner-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            background: #000;
+        }
+
+        .left-container {
+
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 2rem;
+            opacity: 1;
+        }
+
+        .left-container h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .left-container p {
+            font-size: 1.2rem;
+            color: #ccc;
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+
+        .right-container {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .form-container h1 {
+            padding-top: 5px;
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.5rem;
+            gap: 0.5rem;
+            opacity: 1;
+        }
+
+        .form-group label {
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 1rem;
+            box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.2);
+        }
+
+        .button {
+            position: relative;
+            overflow: hidden;
+            border: none;
+            width: 200px;
+            height: 50px;
+            background-color:#24263a;
+            color: white;
+            padding: 1px;
+            font-size: 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            z-index: 1;
+        }
+
+        .button:hover {
+            overflow: hidden;
+            box-shadow: 0px 2px 8px #24263a, 0px 4px 24px #24263a;
+            border-radius: 50px;
+        }
+
+        .inner_button {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 2;
+            border-radius: 50px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-justify: center;
+            text-align: center;
+        }
+
+        .glow {
+            position: absolute;
+            width: 40%;
+            height: 60%;
+            background-color: #24263a;
+            filter: blur(1rem);
+            transition: transform 0.3s ease;
+            top: 0%;
+            left: 0%;
+            bottom: auto;
+            right: auto;
+            transition: transform 0.3s ease;
+
+        }
+
+        .inner_button p {
+            margin: 0;
+            text-align: center;
+        }
+
+
+        @media screen and (max-width: 1100px) {
+            .contact-container {
+                margin-top: 5rem;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contact-inner-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .left-container {
+                margin-bottom: 50px;
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .form-group {
+                width: 100%;
+                justify-items: flex-start;
+            }
+
+
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .contact-container {
+                margin-top: 5rem;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .left-container {
+                width: 100%;
+                height: auto;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .left-container h1 {
+                font-size: 2rem;
+                width: 100%;
+                text-align: center
+            }
+
+            .left-container p {
+                font-size: 0.1 rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            .right-container {
+                width: 100%;
+                height: auto;
+                padding: 1rem;
+            }
+
+        }
+
+       
+    
