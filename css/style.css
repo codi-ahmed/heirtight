@@ -221,6 +221,285 @@ padding: 5%;
   padding: 0;
 }
 
+
+
+
+
+.section {
+      width: 100%;
+      margin-top: 3rem;
+      position: relative
+    }
+.horizontal-sticky {
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      display: flex;
+      position: sticky;
+      top: 10rem;
+      overflow: hidden
+    }
+
+     .sticky-layout {
+
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+	  height: 100dvh;
+      display: flex;
+      position: sticky;
+      top: 0
+    }
+
+    .container {
+        max-width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem
+      }
+
+      .max_width_container{
+      max-width: 90rem;
+     padding-left: 6rem;
+      padding-right: 6rem;
+    }
+    .headline-wrapper {
+      z-index: 2;
+      text-align: center;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: center;
+      max-width: 55rem;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex
+    }
+ .stages_wrapper {
+      margin-top: 6rem;
+      display: flex;
+      position: relative
+    }
+
+    .stages_track {
+      grid-column-gap: 8rem;
+      grid-row-gap: 8rem;
+      flex: 1;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-columns: 1fr;
+      padding-top: 4rem;
+      display: grid;
+      position: relative;
+	  color: white;
+    }
+
+    .stages_progress-section {
+      flex: none;
+      width: 30rem;
+      display: flex;
+      position: relative
+    }
+    .stages_progress-fill {
+      background-image: linear-gradient(90deg, #F2A61F,#BC3B18 10%, #F2A61F 90%, #BC3B18);
+      width: 100%;
+      height: 2px;
+      position: absolute
+    }
+    .stages_progress-section {
+      flex: none;
+      width: 30rem;
+      display: flex;
+      position: relative
+    }
+    
+    .stages_progress {
+      grid-column-gap: 8rem;
+      grid-row-gap: 8rem;
+      flex-direction: row;
+      flex: 1;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-columns: 1fr;
+      align-items: center;
+      display: grid;
+      position: absolute;
+      inset: 0% auto auto 0%
+    }
+
+    .stages_progress-circle {
+      aspect-ratio: 1;
+      background-image: linear-gradient(90deg, #BC3B18,#F2A61F);
+      border-radius: 50%;
+      flex-direction: column;
+      flex: none;
+      justify-content: center;
+      align-items: center;
+      width: 1.9rem;
+      height: 1.9rem;
+      padding: 2px;
+      display: flex
+    }
+
+    .stages_progress-circle.is-1 {
+      background-image: linear-gradient(to right, #BC3B18, #F2A61F 0%)
+    }
+
+    .stages_progress-circle.is-2 {
+      background-image: radial-gradient(90deg, #BC3B18, #F2A61F);
+      left: 40.5em
+    }
+
+    .stages_progress-circle.is-3 {
+      background-image: linear-gradient(90deg, #BC3B18, #F2A61F);
+      left: 81em
+    }
+
+    .stages_progress-circle.is-4 {
+      background-image: linear-gradient(90deg, #BC3B18, #F2A61F 100%, #cdbad9);
+      left: auto;
+      right: 1em
+    }
+
+    .stages_progress-circle_inner {
+      background-color:  linear-gradient(90deg, #BC3B18, #F2A61F);
+      border-radius: 50%;
+      width: 100%;
+      height: 100%
+    }
+    .stages_progress-overaly {
+      z-index: 2;
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0% 0% auto auto
+    }
+    .stages_section {
+      grid-column-gap: 1rem;
+      grid-row-gap: 1rem;
+      flex-flow: column;
+      flex: none;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 30rem;
+      display: flex
+    }
+    .vertical-gap-8 {
+      grid-column-gap: .5rem;
+      grid-row-gap: .5rem;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: center;
+      display: flex
+    }
+
+    .vertical-gap-8.align-right {
+      justify-content: flex-start;
+      align-items: flex-end
+    }
+
+    .vertical-gap-8.align-left {
+      justify-content: flex-start;
+      align-items: flex-start
+    }
+
+    .eyebrow-heading {
+      background-image: linear-gradient(90deg, #BC3B18, #F2A61F);
+      text-transform: uppercase;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      font-size: 2rem;
+    }
+
+
+
+    .petals-layout {
+      grid-column-gap: 1rem;
+      grid-row-gap: 1rem;
+      flex-flow: column;
+      justify-content: center;
+      margin-top: 4rem;
+      display: flex
+    }
+    .petals-row {
+      grid-column-gap: 1rem;
+      grid-row-gap: 1rem;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-columns: 1fr;
+      display: grid
+    }
+
+    .petal {
+      grid-column-gap: .5rem;
+      grid-row-gap: .5rem;
+      text-align: center;
+      background-image: linear-gradient(#BC3B18, #F2A61F);
+      border-radius: 7rem 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 13rem;
+      /* padding: 4rem; */
+      display: flex
+    }
+
+    .petal.inverse {
+      border-radius: 0 7rem
+    }
+
+    .subheading {
+      opacity: .7;
+      text-transform: uppercase;
+      font-weight: 300;
+      line-height: 1.2
+    }
+    .petals-circle {
+      z-index: 2;
+      aspect-ratio: 1;
+      background-image: linear-gradient(180deg,#BC3B18 , black 46%);
+      border-radius: 50%;
+      align-self: center;
+      width: 10rem;
+      padding: 2px;
+      position: relative
+    }
+
+    .petals-circle_inner {
+      background-color: black;
+      border-radius: 50%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      display: flex
+    }
+
+    .petals-circle_text {
+      opacity: 0;
+      font-size: clamp(.875rem, 3vw, 1rem);
+      position: absolute
+    }
+    .petal-texts_wrapper {
+      flex-direction: column;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      display: flex;
+      position: relative
+    }
+
+    .petal-text {
+      opacity: 0;
+      font-size: 2rem;
+      position: absolute;
+      color: white;
+    }
+
 .slider {
   margin-top: 2rem;
   width: 100%;
