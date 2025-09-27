@@ -1,21 +1,112 @@
 #image-about-container1{
-    position: absolute;
+    /* position: absolute;
     top: 10%;
-    right: 0;
+    right: 0; */
+    
 }
 #image-about-container2{
-    position: absolute;
+    /* position: absolute;
     top: 35%;
-    right: 0;
+    right: 0; */
+    width: 30%;
+     display: flex;
+    align-items: center;
 }
 #image-about-container3{
-    position: absolute;
+    /* position: absolute;
     top: 40%;
-    right: 0;
+    right: 0; */
+    width: 30%;
+
 }
 .about-title{
     margin-top: 100px;
 }
+
+.second-section-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.s-l-a-s{
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.about-el{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+
+
+/* .scroll-stack-scroller {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  transform: translateZ(0);
+  will-change: scroll-position;
+} */
+
+.scroll-stack-scroller {
+  position: relative;
+  width: 100%;
+  /* let height be auto so it takes all cards height */
+  height: auto;
+  /* no internal scroll */
+  overflow: visible;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  transform: translateZ(0);
+  will-change: scroll-position;
+}
+
+
+.scroll-stack-inner {
+  padding: 20vh 5rem 50rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-stack-card {
+  transform-origin: top center;
+  /* will-change: transform, filter; */
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  height: 40rem;
+  width: 100%;
+  margin: 0;
+  padding: 3rem;
+  border: .5px solid gray;
+  border-radius: 40px;
+  box-sizing: border-box;
+  background: black;
+  position: relative;
+}
+
+.scroll-stack-end {
+  width: 100%;
+  height: 1px;
+}
+
+
+
 
 @media only screen and (max-width:1300px) {
 #image-about-container1{

@@ -204,20 +204,14 @@ padding: 5%;
 .gradient-text {
   font-size: 28px;
   font-weight: bold;
-  background: radial-gradient(circle at center, #BC3B18 0%, #F2A61F 100%);
-  -webkit-background-clip: text;  /* for Chrome, Safari */
-  -webkit-text-fill-color: transparent; 
-  background-clip: text;          /* standard */
-  color: transparent;
+     /* standard */
+  color: white;
 }
 
 .g-t {
   font-weight: bold;
-  background: radial-gradient(circle at center, #BC3B18 0%, #F2A61F 100%);
-  -webkit-background-clip: text;  /* Chrome, Safari */
-  -webkit-text-fill-color: transparent; 
-  background-clip: text;
-  color: transparent;
+ 
+  color: white;
   padding: 0;
 }
 
@@ -377,7 +371,7 @@ padding: 5%;
     }
     .stages_section {
       grid-column-gap: 1rem;
-      grid-row-gap: 1rem;
+      grid-row-gap: 0rem;
       flex-flow: column;
       flex: none;
       justify-content: flex-start;
@@ -405,14 +399,18 @@ padding: 5%;
     }
 
     .eyebrow-heading {
-      background-image: linear-gradient(90deg, #BC3B18, #F2A61F);
+      /* background-image: linear-gradient(90deg, #BC3B18, #F2A61F); */
       text-transform: uppercase;
-      -webkit-text-fill-color: transparent;
+      /* -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
-      background-clip: text;
+      background-clip: text; */
       font-size: 2rem;
+	  color: white;
     }
 
+	.max-w{
+		    max-width: calc(1180px + 80px * 2);
+	}
 
 
     .petals-layout {
@@ -436,7 +434,7 @@ padding: 5%;
       grid-column-gap: .5rem;
       grid-row-gap: .5rem;
       text-align: center;
-      background-image: linear-gradient(#BC3B18, #F2A61F);
+      background-image: linear-gradient(#0e2398, #1f88f2);
       border-radius: 7rem 0;
       flex-direction: column;
       justify-content: center;
@@ -459,7 +457,7 @@ padding: 5%;
     .petals-circle {
       z-index: 2;
       aspect-ratio: 1;
-      background-image: linear-gradient(180deg,#BC3B18 , black 46%);
+      background-image: linear-gradient(180deg,#0e2398, black 46%);
       border-radius: 50%;
       align-self: center;
       width: 10rem;
@@ -510,7 +508,7 @@ padding: 5%;
 
 .slider-track {
   display: inline-flex;
-  animation: scroll 20s linear infinite;
+   animation: scroll 20s linear infinite;
 }
 
 .slider p {
@@ -528,7 +526,7 @@ padding: 5%;
 
 @keyframes scroll {
   from {
-    transform: translateX(0);
+    transform: translateX(90%);
   }
   to {
     transform: translateX(-100%);
@@ -1148,6 +1146,8 @@ padding: 5%;
 		font-size: 44px;
 		line-height: 1.1;
 }
+
+
 @media only screen and (min-width: 768px) {
 		.about .top-text {
 				font-size: 18px;
@@ -1180,8 +1180,8 @@ padding: 5%;
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 15px;
-		transform: perspective(1200px) rotateX(calc(30deg - 30deg * var(--percent)));
-		will-change: transform;
+		/* transform: perspective(1200px) rotateX(calc(30deg - 30deg * var(--percent)));
+		will-change: transform; */
 }
 .about .el .title {
 		font-size: 30px;
@@ -1189,19 +1189,18 @@ padding: 5%;
 }
 .about .el > *:not(.tag):not(.bg) {
 		position: relative;
-		max-width: 568px;
+		/* max-width: 568px; */
 }
 .about .el .bg3 ~ *:not(.tag):not(.bg) {
 		max-width: 509px;
 }
 .about .tag {
+	 position: relative;    
+    display: inline-block;
 		font-weight: 500;
 		font-size: 15px;
 		padding: 1px;
 		border-radius: 10px;
-		position: absolute;
-		top: 0;
-		left: 0;
 		margin: 40px 30px;
 }
 .about .tag > * {
@@ -2502,6 +2501,7 @@ html.open-modal {
 
 .btn-orange{
 	background: radial-gradient(circle at center, #BC3B18 0%, #F2A61F 100%);
+	min-width: 100px;
 }
 .buy-btns, .buy-btns li {
 		list-style: none;
