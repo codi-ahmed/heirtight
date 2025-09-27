@@ -2,7 +2,9 @@
     /* position: absolute;
     top: 10%;
     right: 0; */
-    
+     width: 30%;
+     display: flex;
+    align-items: center;
 }
 #image-about-container2{
     /* position: absolute;
@@ -106,6 +108,107 @@
 }
 
 
+.faq-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-list-container {
+  position: relative;
+  width: 70%;
+  min-width: 800px;
+}
+
+.scroll-list {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.scroll-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-list::-webkit-scrollbar-track {
+  background: #161617;
+}
+
+.scroll-list::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #BC3B18, #F2A61F);
+  border-radius: 4px;
+}
+
+.item {
+  padding: 16px;
+  background-color: #211c16;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0.7;
+  transform: scale(0.7);
+  overflow: hidden;
+}
+
+.item.selected {
+  background-color: #372c1e;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.item-text {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+}
+
+.top-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(to bottom, #100700, transparent);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.bottom-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, #100a00, transparent);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.sec-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer {
+  display: none;
+  padding: 10px 16px;
+  margin-top: 8px;
+  background-color: black;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+.item.active .answer {
+  display: block;
+}
 
 
 @media only screen and (max-width:1300px) {

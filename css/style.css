@@ -1178,8 +1178,8 @@ padding: 5%;
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 15px;
-		/* transform: perspective(1200px) rotateX(calc(30deg - 30deg * var(--percent)));
-		will-change: transform; */
+		transform: perspective(1200px) rotateX(calc(30deg - 30deg * var(--percent)));
+		will-change: transform;
 }
 .about .el .title {
 		font-size: 30px;
