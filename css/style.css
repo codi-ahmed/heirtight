@@ -543,7 +543,6 @@ padding: 5%;
 }
 
 .f-sec {
-	margin-top: 2rem;
   display: flex;
   flex-direction:column;
   justify-content: center;
@@ -553,8 +552,7 @@ padding: 5%;
   	max-width: calc(1180px + var(--side-padding) * 2);
   
   /* softer glow */
-  box-shadow: 0 0 6px rgba(188, 59, 24, 0.4),
-              0 0 12px rgba(242, 166, 31, 0.4);
+  
 }
 
 
